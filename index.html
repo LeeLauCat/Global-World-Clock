@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Global World Clock </title>
+  </head>
+  <body>
+    <div class="container">
+      <!--Location Selection-->
+      <div class="form-group">
+        <label for="locationSelect">Choose a Location:</label>
+        <select id="locationSelect">
+          <!--Bonus 2 Option-->
+          <option value="local">My Current Location</option>
+          <!--Required 3 locations-->
+          <option value="America/New_York">New York</option>
+          <option value="Europe/London">London</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+        </select>
+      </div>
+
+      <!--Clock Display Card-->
+      <div class="clock-display">
+        <div id="locationTitle" class="location-title">My Current Location</div>
+        <div id="timeString" class="time">--:--:--</div>
+        <div id="dateString" class="date">-- -- ----</div>
+      </div>
+
+      <!--Bonus 1: Homepage link(visible when viewing another city)-->
+      <div class="home-link-container">
+        <a href="#" id="homeLink" class="home-link" style="display: none;">← Back to Homepage / Default</a>
+      </div>
+    </div>
+   
+    <footer>
+      This project was coded with ❤️ by <strong>Tshepo Moeti</strong> and is
+      <a href=" target="_blank">
+        open sourced on GitHub</a
+      >
+    </footer>
+    <script src="src/index.js"></script>
+  </body>
+</html>
